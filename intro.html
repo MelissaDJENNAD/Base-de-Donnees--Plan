@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--BOOTSTRAP-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    <!--FIN BOOTSTRAP-->
+
+    <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+<h1><span style="font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 70px;"> <span class="glyphicon glyphicon-leaf" aria-hidden="true"></span>Pro- School </span><span style="font-family: 'Pacifico', cursive;"><small>Introduction</small></span></h1>
+
+<h2>PREMIERE PAGE <small>Formulaire de connextion</small></h2>
+
+<ul>
+    <li>J' ai choisi pour l' inscription de mettre en place un input pour le nom, la date de naissance ( qui pourra servir lors de la réalisation de statisque ainsi ) l' email & un password > huit caractères</li>
+<li>J' ai choisi pour la connextion unique un input pour l' email & le password</li>
+</ul>
+
+<h2>BASE DE DONNÉES <small>Estimation</small></h2>
+<p>J' ai choisi d' utiliser MySQL Workbench pour crées les bases de données </p>
+<ol>
+    <li>enregistrer les informations utilisateurs</li>
+    <div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nom</th>
+            <th>Date de Naissace</th>
+            <th>Email</th>
+            <th>MDP</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>#</td>
+            <td>VARCHAR ( 255 )</td>
+            <td>DATE</td>
+            <td>VARCHAR ( 255 ) </td>
+            <td>VARCHAR ( 255 )</td>
+        </tr>
+        </tbody>
+    </table>
+    </div>
+    <li> enregistrer des matières</li>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>id</th>
+                <th>Matièresouc</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>#</td>
+                <td>VARCHAR ( 255 )</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <li> enregistrer des chapitres à faire dans les matières</li>
+    <li> enregistrer des horaires pour les chapitres à faire</li>
+    <li> enregistrer un jour pour les chapitre à faire</li>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>Matières_Id</th>
+                <th>Chapitres</th>
+                <th>Horaire début</th>
+                <th>Horaire fin</th>
+                <th>Jours</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>#</td>
+                <td>INT ( 11 )</td>
+                <td>VARCHAR ( 255 )</td>
+                <td>TIME</td>
+                <td>TIME</td>
+                <td>DATE</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <li> enregistrer entraînements chronométrés dans une matière</li>
+    <li> enregistrer  chronomètre des entraînements</li>
+    <li> enregistrer des horaires pour l' entraînement</li>
+    <li> enregistrer un jour pour l' entraînement</li>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>Matières_Id</th>
+                <th>Nom de l' entraînement</th>
+                <th>Horaire début</th>
+                <th>Horaire fin</th>
+                <th>Jours</th>
+                <th>Temps Chronomètré</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>#</td>
+                <td>INT ( 11 )</td>
+                <td>VARCHAR ( 255 )</td>
+                <td>TIME</td>
+                <td>TIME </td>
+                <td>DATE</td>
+                <td>TIME</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</ol>
+
+
+</body>
+</html>
